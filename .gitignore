@@ -5,11 +5,7 @@ __pycache__/
 
 # Variables de entorno sensibles
 .env
-
-# Archivos de datos CSV:
-data/
-# *.csv  
-
+ 
 # Archivos de configuración y caché de Streamlit
 .streamlit/
 
