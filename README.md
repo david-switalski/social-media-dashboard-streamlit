@@ -1,6 +1,6 @@
 # Social Media Analytics Dashboard
 
-![Dashboard Demo](screenshots/dashboard.gif)
+![dashboard](https://github.com/user-attachments/assets/ac2b90d5-f92d-409a-b03b-89e7cf4f7938)
 
 ---
 
@@ -41,18 +41,19 @@ This application demonstrates strong data processing, visualization, and web app
 
 The project follows a modular structure for improved organization, readability, and maintainability:
 
-your_project_root/
+```bash
+streamlit-dashboard/
 ├── data/
 │   └── tweets.csv            # Original dataset
 ├── app.py                    # Main Streamlit application script
 ├── data_processing.py        # Module for data loading and preprocessing
 ├── plotting.py               # Module for all chart generation functions
-├── utils.py                  # Module for helper functions (e.g., custom CSS, sentiment classification)
+├── utils.py                  # Module for helper functions 
 ├── requirements.txt          # List of all project dependencies
-└── README.md                 # Project documentation (this file)
+├── README.md                 # Project documentation 
 └── screenshots/              # Folder for dashboard screenshots or GIFs
-    └── dashboard_screenshot.png
-    └── dashboard_demo.gif (optional)
+    └── dashboard.gif 
+```
 
 ---
 
@@ -62,8 +63,8 @@ Follow these steps to set up and run the dashboard locally:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository-name.git
-    cd your-repository-name
+    git clone [https://github.com/david-switalski/social-media-dashboard-streamlit.git](https://github.com/david-switalski/social-media-dashboard-streamlit.git)
+    cd social-media-dashboard-streamlit
 
 2. **Create a virtual environment (recommended):**
     ```bash
