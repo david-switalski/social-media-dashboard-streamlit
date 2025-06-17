@@ -3,8 +3,14 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import streamlit as st
+import nltk
 from nltk.corpus import stopwords
 
+try:
+    nltk.data.find('corpora/stopwords')
+except nltk.downloader.DownloadError:
+    nltk.download('stopwords')
+    
 def display_author_monthly_tweet_volume_bar_chart(df, authorTweet, yearTweet):
     """
     Generates a bar chart showing the volume of tweets by month for a specific author and year.
