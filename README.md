@@ -41,28 +41,20 @@ This application demonstrates strong data processing, visualization, and web app
 
 The project follows a modular structure for improved organization, readability, and maintainability:
 
-your_project_root/
-
+```bash
+streamlit-dashboard/
 ├── data/
-
-│   └── tweets.csv   # Original dataset
+│   └── tweets.csv            # Original dataset
 ├── app.py                    # Main Streamlit application script
-
 ├── data_processing.py        # Module for data loading and preprocessing
-
 ├── plotting.py               # Module for all chart generation functions
-
 ├── utils.py                  # Module for helper functions (e.g., custom CSS, sentiment classification)
-
 ├── requirements.txt          # List of all project dependencies
-
-└── README.md                 # Project documentation (this file)
-
+├── README.md                 # Project documentation (this file)
 └── screenshots/              # Folder for dashboard screenshots or GIFs
-
     └── dashboard_screenshot.png
-    
     └── dashboard_demo.gif (optional)
+```
 
 ---
 
