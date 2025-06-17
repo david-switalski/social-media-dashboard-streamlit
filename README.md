@@ -1,6 +1,6 @@
 # Social Media Analytics Dashboard
 
-![Dashboard Demo](screenshots/dashboard.gif)
+![dashboard](https://github.com/user-attachments/assets/ac2b90d5-f92d-409a-b03b-89e7cf4f7938)
 
 ---
 
@@ -48,12 +48,11 @@ streamlit-dashboard/
 ├── app.py                    # Main Streamlit application script
 ├── data_processing.py        # Module for data loading and preprocessing
 ├── plotting.py               # Module for all chart generation functions
-├── utils.py                  # Module for helper functions (e.g., custom CSS, sentiment classification)
+├── utils.py                  # Module for helper functions 
 ├── requirements.txt          # List of all project dependencies
-├── README.md                 # Project documentation (this file)
+├── README.md                 # Project documentation 
 └── screenshots/              # Folder for dashboard screenshots or GIFs
-    └── dashboard_screenshot.png
-    └── dashboard_demo.gif (optional)
+    └── dashboard.gif 
 ```
 
 ---
