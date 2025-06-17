@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 
 try:
     nltk.data.find('corpora/stopwords')
-except nltk.downloader.DownloadError:
+except LookupError: 
     nltk.download('stopwords')
     
 def display_author_monthly_tweet_volume_bar_chart(df, authorTweet, yearTweet):
