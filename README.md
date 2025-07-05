@@ -42,21 +42,21 @@ The project follows a modular structure for improved organization, readability, 
 
 ```bash
 streamlit-dashboard/
-├── .gitignore                # Specifies files/folders to be ignored by Git
-├── data/
-│   └── tweets.csv            # Original dataset with tweets
-├── request/
-│   └── http_request_handler.py   # Handles HTTP requests
-├── screenshot/
-│   └── dashboard.gif         # Dashboard screenshot or GIF
-├── __init__.py               # Marks directory as a Python package
-├── app.py                    # Main Streamlit app entry point
-├── config.py                 # App configuration settings
-├── data_processing.py        # Data loading and preprocessing functions
-├── plotting.py               # Chart and plot generation functions
-├── utils.py                  # Helper utility functions
-├── README.md                 # Project documentation
-└── requirements.txt          # Python dependencies lisst
+    ├── .gitignore                # Specifies files/folders to be ignored by Git
+    ├── data/
+    │   └── tweets.csv            # Original dataset with tweets
+    ├── request/
+    │   └── http_request_handler.py   # Handles HTTP requests
+    ├── screenshot/
+    │   └── dashboard.gif         # Dashboard screenshot or GIF
+    ├── __init__.py               # Marks directory as a Python package
+    ├── app.py                    # Main Streamlit app entry point
+    ├── config.py                 # App configuration settings
+    ├── data_processing.py        # Data loading and preprocessing functions
+    ├── plotting.py               # Chart and plot generation functions
+    ├── utils.py                  # Helper utility functions
+    ├── README.md                 # Project documentation
+    └── requirements.txt          # Python dependencies lisst
 ```
 
 ---
