@@ -4,10 +4,6 @@
 
 ---
 
-**This project, a Dynamic and Interactive Social Media Analytics Dashboard, demonstrates skills in data processing, visualization, and basic web application development with Python, making it a valuable addition to any junior data analyst or scientist's portfolio. This project includes a background service to ensure continued availability after the application is deployeyed.**
-
----
-
 ## Overview 
 This project is a dynamic and interactive **Social Media Analytics Dashboard** built using Streamlit and Plotly. It provides an intuitive interface to explore and visualize tweet data, focusing on tweet volume, sentiment distribution, and key recurring words. The dashboard allows users to filter data by author and year, offering granular insights into tweeting patterns and public sentiment over time.
 
