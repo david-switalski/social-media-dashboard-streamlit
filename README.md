@@ -4,10 +4,12 @@
 
 ---
 
+**This project, a Dynamic and Interactive Social Media Analytics Dashboard, demonstrates skills in data processing, visualization, and basic web application development with Python, making it a valuable addition to any junior data analyst or scientist's portfolio. This project includes a background service to ensure continued availability after the application is deployeyed.**
+
+---
+
 ## Overview 
 This project is a dynamic and interactive **Social Media Analytics Dashboard** built using Streamlit and Plotly. It provides an intuitive interface to explore and visualize tweet data, focusing on tweet volume, sentiment distribution, and key recurring words. The dashboard allows users to filter data by author and year, offering granular insights into tweeting patterns and public sentiment over time.
-
-This application demonstrates strong data processing, visualization, and web application development skills in Python, making it a valuable addition to a data analyst or data scientist portfolio.
 
 ---
 
@@ -34,6 +36,7 @@ This application demonstrates strong data processing, visualization, and web app
 * **NLTK (Natural Language Toolkit):** Used for managing stopwords in text processing.
 * **Matplotlib:** Used in conjunction with WordCloud for rendering.
 * **Regular Expressions (re):** For cleaning tweet text (removing URLs, mentions, hashtags).
+* **Request:** To keep the "streamlit cloud" service active programmatically.
 
 ---
 
@@ -43,16 +46,21 @@ The project follows a modular structure for improved organization, readability, 
 
 ```bash
 streamlit-dashboard/
+├── .gitignore                # Specifies files/folders to be ignored by Git
 ├── data/
-│   └── tweets.csv            # Original dataset
-├── app.py                    # Main Streamlit application script
-├── data_processing.py        # Module for data loading and preprocessing
-├── plotting.py               # Module for all chart generation functions
-├── utils.py                  # Module for helper functions 
-├── requirements.txt          # List of all project dependencies
-├── README.md                 # Project documentation 
-└── screenshots/              # Folder for dashboard screenshots or GIFs
-    └── dashboard.gif 
+│   └── tweets.csv            # Original dataset with tweets
+├── request/
+│   └── http_request_handler.py   # Handles HTTP requests
+├── screenshot/
+│   └── dashboard.gif         # Dashboard screenshot or GIF
+├── __init__.py               # Marks directory as a Python package
+├── app.py                    # Main Streamlit app entry point
+├── config.py                 # App configuration settings
+├── data_processing.py        # Data loading and preprocessing functions
+├── plotting.py               # Chart and plot generation functions
+├── utils.py                  # Helper utility functions
+├── README.md                 # Project documentation
+└── requirements.txt          # Python dependencies lisst
 ```
 
 ---
