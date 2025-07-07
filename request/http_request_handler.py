@@ -2,10 +2,8 @@
 
 import requests
 import time
-import random
 
 url = ('https://social-media-dashboard-app-xpwxatitnjprnkp9v5cfde.streamlit.app/')
-
 
 while True:
     successful_request = False
@@ -27,9 +25,7 @@ while True:
         except Exception:
             time.sleep(300)
             
-    random_hour = random.randint(1,10)
-    t = 3600 * random_hour
-    print(t)
+    t = 3
     time.sleep(t)
 
     
