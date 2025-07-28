@@ -110,6 +110,10 @@ streamlit run app.py
 
 The application will automatically open in your default web browser (usually at http://localhost:8501).
 
+* **Live Deployment**
+    This dashboard is professionally deployed on **Streamlit Cloud**:
+    *URL: https://social-media-dashboard-app-xpwxatitnjprnkp9v5cfde.streamlit.app/*
+
 * **Data Source**
     The tweet dataset used in this project was obtained from Kaggle:
     *Tweets Dataset by mmmarchetti*
