@@ -65,7 +65,7 @@ streamlit-dashboard/
     ├── app.py                    # Main Streamlit app entry point
     ├── config.py                 # App configuration settings
     ├── data_processing.py        # Data loading and preprocessing functions
-    ├── LICENCE.md
+    ├── LICENSE
     ├── plotting.py               # Chart and plot generation functions
     ├── utils.py                  # Helper utility functions
     ├── README.md                 # Project documentation
