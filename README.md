@@ -80,7 +80,7 @@ Follow these steps to set up and run the dashboard locally:
 
 1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/david-switalski/social-media-dashboard-streamlit.git](https://github.com/david-switalski/social-media-dashboard-streamlit.git)
+    git clone https://github.com/david-switalski/social-media-dashboard-streamlit.git
     cd social-media-dashboard-streamlit
 
 2. **Create a virtual environment (recommended):**
@@ -123,18 +123,30 @@ streamlit run app.py
 
 The application will automatically open in your default web browser (usually at http://localhost:8501).
 
-* **Live Deployment**
+---
+
+## Contact
+
+**David Switalski**
+*(Informático y Desarrollador en Formación)*
+
+* **LinkedIn:** [David Switalski](https://www.linkedin.com/in/david-switalski-50b11133a/)
+* **Email:** davidspuni@gmail.com
+
+---
+
+## Live Deployment
+
+* **Web Application:** 
     This dashboard is professionally deployed on **Streamlit Cloud**:
     *URL: https://social-media-dashboard-app-xpwxatitnjprnkp9v5cfde.streamlit.app/*
-
-* **Data Source**
+* **Data Source:** 
     The tweet dataset used in this project was obtained from Kaggle:
     *Tweets Dataset by mmmarchetti*
     *URL: https://www.kaggle.com/datasets/mmmarchetti/tweets-dataset*
 
-* **Contribution**
-    You can submit a change contribution request if you want to contribute or improve a feature.
+---
 
-* **Contact**
-    [David Switalski/[LinkedIn Profile](https://www.linkedin.com/in/david-switalski-50b11133a/)]
-    Email: davidspuni@gmail.com
+## Contribution
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss potential changes or additions.
