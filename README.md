@@ -1,5 +1,17 @@
 # Social Media Analytics Dashboard
 
+![GitHub License](https://img.shields.io/github/license/david-switalski/social-media-dashboard-streamlit)
+
+[![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Pandas](https://img.shields.io/badge/Pandas-grey?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-23F2BC?style=flat&logo=plotly&logoColor=white)](https://plotly.com/python/)
+[![VaderSentiment](https://img.shields.io/badge/VaderSentiment-FF69B4?style=flat&logoColor=white)](https://github.com/cjhutto/vaderSentiment)
+[![NLTK](https://img.shields.io/badge/NLTK-394F6A?style=flat&logo=nltk&logoColor=white)](https://www.nltk.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/mmmarchetti/tweets-dataset)
+[![Deployed on Streamlit Cloud](https://img.shields.io/badge/Deployed%20on-Streamlit%20Cloud-FF4B4B?style=flat&logo=streamlit&logoColor=white)](https://social-media-dashboard-app-xpwxatitnjprnkp9v5cfde.streamlit.app/)
+
 ![dashboard](https://github.com/user-attachments/assets/ac2b90d5-f92d-409a-b03b-89e7cf4f7938)
 
 ---
@@ -53,6 +65,7 @@ streamlit-dashboard/
     ├── app.py                    # Main Streamlit app entry point
     ├── config.py                 # App configuration settings
     ├── data_processing.py        # Data loading and preprocessing functions
+    ├── LICENCE.md
     ├── plotting.py               # Chart and plot generation functions
     ├── utils.py                  # Helper utility functions
     ├── README.md                 # Project documentation
