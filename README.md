@@ -131,6 +131,7 @@ The application will automatically open in your default web browser (usually at 
 *(Informático y Desarrollador en Formación)*
 
 * **LinkedIn:** [David Switalski](https://www.linkedin.com/in/david-switalski-50b11133a/)
+* **GitHub:** [David Switalski](https://github.com/david-switalski)
 * **Email:** davidspuni@gmail.com
 
 ---
