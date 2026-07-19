@@ -69,7 +69,7 @@ streamlit-dashboard/
     ├── plotting.py               # Chart and plot generation functions
     ├── utils.py                  # Helper utility functions
     ├── README.md                 # Project documentation
-    └── requirements.txt          # Python dependencies lisst
+    └── requirements.txt          # Python dependencies list
 ```
 
 ---
@@ -122,6 +122,16 @@ streamlit run app.py
 ```
 
 The application will automatically open in your default web browser (usually at http://localhost:8501).
+
+## Analyze an Xquik CSV Export
+
+Use the sidebar uploader to load a saved Xquik CSV export. The data loader maps
+common export headers such as `created_at`, `date`, `timestamp`, `text`,
+`tweet`, `full_text`, `username`, `screen_name`, `likes`, `like_count`,
+`retweets`, and `retweet_count` into the dashboard's existing tweet, author,
+date, and engagement columns before running the VADER sentiment pipeline. Blank
+tweet rows are skipped, and numeric engagement columns are coerced before charts
+read them.
 
 ---
 

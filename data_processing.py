@@ -4,6 +4,30 @@ import re
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from utils import classify_sentiment 
 
+def get_column(df, names, default):
+    for name in names:
+        if name in df.columns:
+            return df[name].fillna(default)
+    return pd.Series([default] * len(df), index=df.index)
+
+def normalize_tweet_columns(df):
+    """
+    Maps saved Xquik-style exports into the Kaggle dataset columns used by the dashboard.
+    """
+    if 'content' not in df.columns:
+        df['content'] = get_column(df, ['text', 'tweet', 'full_text', 'body'], '')
+    if 'date_time' not in df.columns:
+        df['date_time'] = get_column(df, ['created_at', 'date', 'timestamp'], '')
+    if 'author' not in df.columns:
+        df['author'] = get_column(df, ['author', 'username', 'screen_name', 'user'], 'Xquik export')
+    if 'language' not in df.columns:
+        df['language'] = get_column(df, ['lang'], 'en')
+    if 'number_of_likes' not in df.columns:
+        df['number_of_likes'] = get_column(df, ['likes', 'like_count', 'favorite_count'], 0)
+    if 'number_of_shares' not in df.columns:
+        df['number_of_shares'] = get_column(df, ['retweets', 'retweet_count', 'shares'], 0)
+    return df
+
 @st.cache_data
 def load_and_preprocess_data(file_path):
     """
@@ -21,6 +45,7 @@ def load_and_preprocess_data(file_path):
     """
     try:
         df = pd.read_csv(file_path)
+        df = normalize_tweet_columns(df)
 
         df.rename(columns = {
             'content': 'tweet_text',
@@ -28,6 +53,10 @@ def load_and_preprocess_data(file_path):
             'number_of_likes': 'likes_count',
             'number_of_shares': 'retweet_count'
         }, inplace=True)
+
+        for metric_column in ['likes_count', 'retweet_count']:
+            if metric_column in df.columns:
+                df[metric_column] = pd.to_numeric(df[metric_column], errors='coerce').fillna(0).astype('Int64')
 
         df = df[df['language'] == 'en']
 
@@ -48,7 +77,8 @@ def load_and_preprocess_data(file_path):
             df['year'] = None
             df['month'] = None
 
-        df['tweet_text'] = df['tweet_text'].astype('string')
+        df['tweet_text'] = df['tweet_text'].astype('string').fillna('')
+        df = df[df['tweet_text'].str.strip() != ''].copy()
 
         df['tweet_text'] = df['tweet_text'].apply(lambda x: re.sub(r'http\S+|www\S+|https\S+','', x))
         df['tweet_text'] = df['tweet_text'].apply(lambda x: re.sub(r'@\w+', '', x))

@@ -28,10 +28,16 @@ if 'df' not in st.session_state:
 # Sidebar for Filtering Options
 with st.sidebar:
     st.sidebar.header("Filters")
+    uploaded_file = st.file_uploader("Upload Xquik CSV export", type=["csv"])
+    if uploaded_file is not None:
+        uploaded_df = load_and_preprocess_data(uploaded_file)
+        if uploaded_df is not None:
+            st.session_state.df = uploaded_df
+
     authorTweet = None
     yearTweet = None
 
-    if st.session_state.df is not None:
+    if st.session_state.df is not None and not st.session_state.df.empty:
         # Get unique authors and sort them for the selectbox
         all_authors = sorted(st.session_state.df['author'].unique())
         authorTweet = st.selectbox('Author', options=all_authors, index=0, help="Select an author to filter the tweets.")
